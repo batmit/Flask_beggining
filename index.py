@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__, template_folder='site')
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def Home():
   return render_template('index.html')
 
